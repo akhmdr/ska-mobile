@@ -7,6 +7,7 @@ import 'package:ska_mobile/modules/profil/petunjuk_penggunaan_page.dart';
 import 'package:ska_mobile/modules/profil/profil_perusahaan_page.dart';
 import 'package:ska_mobile/modules/profil/tentang_aplikasi_page.dart';
 import 'package:ska_mobile/modules/profil/video_tutorial_page.dart';
+import 'package:ska_mobile/modules/eksportir/detail_eksportir_page.dart';
 import 'modules/login/login_page.dart';
 
 void main() {
@@ -33,8 +34,11 @@ class MyApp extends StatelessWidget {
         '/tentang-aplikasi': (context) => const TentangAplikasiPage(),
         '/profil-perusahaan': (context) => const ProfilPerusahaanPage(),
         '/manajemen-perusahaan': (context) => const ManajemenPerusahaanPage(),
+          // Ganti dengan halaman detail eksp
       },
       // Tambahkan rute lainnya di sini jika diperlukan
     );
   }
 }
+
+

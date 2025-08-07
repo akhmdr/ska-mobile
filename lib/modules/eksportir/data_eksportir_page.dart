@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ska_mobile/core/theme/app_theme.dart';
 import 'package:ska_mobile/core/widgets/custom_app_bar.dart';
+import 'package:ska_mobile/modules/eksportir/detail_eksportir_page.dart';
 
 class DataEksportirPage extends StatefulWidget {
   const DataEksportirPage({super.key});
@@ -65,7 +66,20 @@ class _DataEksportirPageState extends State<DataEksportirPage> {
                 final e = _data[index];
                 return GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, '/detail-eksportir', arguments: e);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder:
+                            (_) => DetailEksportirPage(
+                              perusahaan: e['nama']!,
+                              nib: e['nib']!,
+                              npwp: e['npwp']!,
+                              alamat: e['alamat']!,
+                              kantor: e['kantor']!,
+                              status: e['status']!,
+                            ),
+                      ),
+                    );
                   },
                   child: Container(
                     margin: const EdgeInsets.only(bottom: 16),
@@ -86,25 +100,47 @@ class _DataEksportirPageState extends State<DataEksportirPage> {
                       children: [
                         Row(
                           children: [
-                            Expanded(child: Text(e['nama']!, style: AppTheme.textBold14)),
+                            Expanded(
+                              child: Text(
+                                e['nama']!,
+                                style: AppTheme.textBold14,
+                              ),
+                            ),
                             Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 12,
+                                vertical: 6,
+                              ),
                               decoration: BoxDecoration(
                                 color: Colors.green.shade50,
                                 borderRadius: BorderRadius.circular(20),
                               ),
                               child: Text(
                                 e['status']!,
-                                style: AppTheme.textRegular13.copyWith(color: Colors.green),
+                                style: AppTheme.textRegular13.copyWith(
+                                  color: Colors.green,
+                                ),
                               ),
                             ),
                           ],
                         ),
                         const SizedBox(height: 12),
                         _buildInfoRow(Icons.badge_outlined, 'NIB', e['nib']!),
-                        _buildInfoRow(Icons.account_balance, 'NPWP', e['npwp']!),
-                        _buildInfoRow(Icons.location_on_outlined, 'Alamat', e['alamat']!),
-                        _buildInfoRow(Icons.apartment, 'Kantor IPSKA', e['kantor']!),
+                        _buildInfoRow(
+                          Icons.account_balance,
+                          'NPWP',
+                          e['npwp']!,
+                        ),
+                        _buildInfoRow(
+                          Icons.location_on_outlined,
+                          'Alamat',
+                          e['alamat']!,
+                        ),
+                        _buildInfoRow(
+                          Icons.apartment,
+                          'Kantor IPSKA',
+                          e['kantor']!,
+                        ),
                       ],
                     ),
                   ),
@@ -166,20 +202,27 @@ class _DataEksportirPageState extends State<DataEksportirPage> {
                 const SizedBox(width: 12),
                 Container(
                   decoration: BoxDecoration(
-                    color: _isFilterExpanded ? AppTheme.primaryColor : AppTheme.whiteColor,
+                    color:
+                        _isFilterExpanded
+                            ? AppTheme.primaryColor
+                            : AppTheme.whiteColor,
                     borderRadius: BorderRadius.circular(12),
                     border: Border.all(
-                      color: _isFilterExpanded
-                          ? AppTheme.primaryColor
-                          : Colors.grey[300]!,
+                      color:
+                          _isFilterExpanded
+                              ? AppTheme.primaryColor
+                              : Colors.grey[300]!,
                     ),
                   ),
                   child: IconButton(
                     icon: Icon(
-                      _isFilterExpanded ? Icons.filter_list_off : Icons.filter_list,
-                      color: _isFilterExpanded
-                          ? Colors.white
-                          : AppTheme.primaryColor,
+                      _isFilterExpanded
+                          ? Icons.filter_list_off
+                          : Icons.filter_list,
+                      color:
+                          _isFilterExpanded
+                              ? Colors.white
+                              : AppTheme.primaryColor,
                     ),
                     onPressed: _toggleFilter,
                   ),
@@ -211,11 +254,19 @@ class _DataEksportirPageState extends State<DataEksportirPage> {
                       ),
                     ),
                     const SizedBox(height: 16),
-                    _buildDropdown('Status Perusahaan', ['Aktif', 'Tidak Aktif'], _filterStatus,
-                        (val) => setState(() => _filterStatus = val)),
+                    _buildDropdown(
+                      'Status Perusahaan',
+                      ['Aktif', 'Tidak Aktif'],
+                      _filterStatus,
+                      (val) => setState(() => _filterStatus = val),
+                    ),
                     const SizedBox(height: 12),
-                    _buildDropdown('Kantor IPSKA', ['Kab. Bogor', 'Kab. Purwakarta'],
-                        _filterKantor, (val) => setState(() => _filterKantor = val)),
+                    _buildDropdown(
+                      'Kantor IPSKA',
+                      ['Kab. Bogor', 'Kab. Purwakarta'],
+                      _filterKantor,
+                      (val) => setState(() => _filterKantor = val),
+                    ),
                     const SizedBox(height: 12),
                     Row(
                       children: [
@@ -223,7 +274,9 @@ class _DataEksportirPageState extends State<DataEksportirPage> {
                           child: ElevatedButton(
                             onPressed: () {
                               ScaffoldMessenger.of(context).showSnackBar(
-                                const SnackBar(content: Text('Filter diterapkan')),
+                                const SnackBar(
+                                  content: Text('Filter diterapkan'),
+                                ),
                               );
                             },
                             child: const Text('Terapkan Filter'),
@@ -249,15 +302,25 @@ class _DataEksportirPageState extends State<DataEksportirPage> {
   }
 
   Widget _buildDropdown(
-      String label, List<String> items, String? selected, Function(String?) onChanged) {
+    String label,
+    List<String> items,
+    String? selected,
+    Function(String?) onChanged,
+  ) {
     return DropdownButtonFormField<String>(
       value: selected,
       decoration: InputDecoration(
         labelText: label,
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
-        contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 14),
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 12,
+          vertical: 14,
+        ),
       ),
-      items: items.map((item) => DropdownMenuItem(value: item, child: Text(item))).toList(),
+      items:
+          items
+              .map((item) => DropdownMenuItem(value: item, child: Text(item)))
+              .toList(),
       onChanged: onChanged,
     );
   }
