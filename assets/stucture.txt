@@ -1,0 +1,110 @@
+- flutter, materialui3, fixing the ui, make it more stunning.
+- i want the protoype is having the white color as backgorund (like lot of app rn) and have these color as scheme: 
+#36474f (main color), 
+#3a516a, 
+#032033. well it's not locked in this colors tough, just make it stunning
+- rightnow, my app isn't in one "theme". the appbar is differ foreach page, etc
+- if there'is a data in the page. i want you to separate it.
+- i want this protype is integration ready.
+- the structure, rightnow is liked this:
+1. assets (folder)
+   1.1 icons (folder)
+   1.2 images (folder)
+        1.2.1 banners (folder)
+           1.2.1.1 banner01.jpeg
+           1.2.1.2 banner02.jpeg
+           1.2.1.3 banner03.png
+        1.2.2 berita1.jpg
+        1.2.3 berita2.jpg
+        1.2.4 icon_kemendag.png
+        1.2.5 icon_oss.png
+        1.2.6 logo_eska.png
+        1.2.7 logo_eska01.png
+        1.2.8 logo_kemendag.png
+
+lib (folder)
+1.1 core
+       1.1.1 models
+           - dab_models.dart
+           - models.dart
+       1.1.2 theme
+           - app_theme.dart
+       1.1.3 widgets
+           - custom_app_bar.dart
+           - news_card.dart
+   1.2 data
+       1.2.1 beranda
+           - news_dummy.dart
+           - quick_access_dummy.dart
+           - ska_sent_dummy.dart
+       1.2.2 dab
+           - penerbitan_dab_dummy.dart
+       1.2.3 eksportir
+           (folder exists, contents not expanded)
+       1.2.4 services
+           - beranda_service.dart
+           - dab_service.dart
+           - banner_images.dart
+
+2. data (folder)
+    2.1 beranda (folder)
+        2.1.1 news_dummy.dart
+        2.1.2 quick_access_dummy.dart
+        2.1.3 ska_sent_dummy.dart
+    2.2 dab (folder)
+        2.2.1 penerbitan_dab_dummy.dart
+    2.3 eksportir (folder)
+        2.3.1 data_eksportir_dummy.dart
+        2.3.2 banner_images.dart
+3. modules (folder)
+    3.1 beranda (folder)
+        3.1.1 beranda_page.dart
+    3.2 dab (folder)
+        3.2.1 detail_penerbitan_dab_page.dart
+        3.2.2 penerbitan_dab_page.dart
+    3.3 eksportir (folder)
+        3.3.1 data_eksportir_page.dart
+        3.3.2 detail_eksportir_page.dart
+    3.4 kontak (folder)
+        3.4.2 kontak_kami_page.dart
+        3.4.1 tabs (folder)
+            3.4.1.1 call_center_tab.dart
+            3.4.1.2 hubungi_kami_tab.dart
+            3.4.1.3 kantor_ipska_tab.dart
+    3.5 login (folder)
+        3.5.1 login_page.dart
+    3.6 notifikasi (folder)
+        3.6.1 notifikasi_page.dart
+    3.7 profil (folder)
+        3.7.1 faq_page.dart
+        3.7.2 manajemen_perusahaan_page.dart
+        3.7.3 perjanjian_page.dart
+        3.7.4 petunjuk_penggunaan_page.dart
+        3.7.5 profil_page.dart
+        3.7.6 profil_perusahaan_page.dart
+        3.7.7 tentang_aplikasi_page.dart
+        3.7.8 video_tutorial_page.dart
+    3.8 tracking (folder)
+        3.8.1 detail_ska_page.dart
+        3.8.2 tracking_page.dart
+4. app.dart
+5. main.dart
+
+- don't execute anything first. you can ask me anything, confirming to me. so the result is good
+
+1. assets (folder)
+    1.1. icons (folder)
+    1.2 images (folder)
+    1.2.2 berita1.jpg
+    1.2.3 berita2.jpg
+    1.2.4 icon_kemendag.png
+    1.2.5 icon_oss.png
+    1.2.6 logo_eska.png
+    1.2.7 logo_eska01.png
+    1.2.8 logo_kemendag.png
+    1.2.1 banners (folder)
+        1.2.1 banner01.jpeg
+        1.2.2 banner02.jpeg
+        1.2.3 banner03.png
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
