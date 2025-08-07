@@ -1,183 +1,213 @@
 import 'package:flutter/material.dart';
+import 'package:ska_mobile/core/theme/app_theme.dart';
+import 'package:ska_mobile/core/widgets/custom_app_bar.dart';
 import 'package:ska_mobile/modules/tracking/detail_ska_page.dart';
 
 class TrackingPage extends StatelessWidget {
   const TrackingPage({super.key});
 
+  final List<Map<String, String>> dummyTracking = const [
+    {
+      'status': 'Diterbitkan',
+      'form': 'Form AANZ',
+      'eksportir': 'PT Ekspor Sejahtera',
+      'nomorAju': 'ID202507310261',
+      'nomorSKA': '0038799/JKT/2025',
+      'negara': 'Jepang',
+      'tanggal': '31 Juli 2025 – 10:21 WIB',
+    },
+    {
+      'status': 'Revisi',
+      'form': 'Form AK',
+      'eksportir': 'PT Karya Tani',
+      'nomorAju': 'ID202507310302',
+      'nomorSKA': '0002174/BDG/2025',
+      'negara': 'Malaysia',
+      'tanggal': '30 Juli 2025 – 09:12 WIB',
+    },
+    {
+      'status': 'Ditolak',
+      'form': 'Form E',
+      'eksportir': 'PT Gagal Kirim',
+      'nomorAju': 'ID202507290111',
+      'nomorSKA': '0000020/SMG/2025',
+      'negara': 'India',
+      'tanggal': '29 Juli 2025 – 08:00 WIB',
+    },
+  ];
+
   @override
   Widget build(BuildContext context) {
-    final skaList = [
-      {
-        'status': 'Diterbitkan',
-        'form': 'Form AANZ',
-        'nomorAju': 'ID202507310261',
-        'nomorSKA': '0038799/JKT/2025',
-        'eksportir': 'PT Ekspor Sejahtera',
-        'negara': 'Jepang',
-        'tanggal': '31 Juli 2025 - 10:21 WIB',
-      },
-      {
-        'status': 'Revisi',
-        'form': 'Form AK',
-        'nomorAju': 'ID202507310302',
-        'nomorSKA': '0002174/BDG/2025',
-        'eksportir': 'PT Karya Tani',
-        'negara': 'Malaysia',
-        'tanggal': '30 Juli 2025 - 09:12 WIB',
-      },
-      {
-        'status': 'Ditolak',
-        'form': 'Form E',
-        'nomorAju': 'ID202507280119',
-        'nomorSKA': '0001023/SBY/2025',
-        'eksportir': 'PT Agro Nusantara',
-        'negara': 'Thailand',
-        'tanggal': '28 Juli 2025 - 13:45 WIB',
-      },
-      {
-        'status': 'Diproses',
-        'form': 'Form IJEPA',
-        'nomorAju': 'ID202507290456',
-        'nomorSKA': '0009871/MKS/2025',
-        'eksportir': 'CV Berkat Laut',
-        'negara': 'Korea Selatan',
-        'tanggal': '29 Juli 2025 - 08:30 WIB',
-      },
-    ];
-
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Tracking SKA'),
-        backgroundColor: Colors.blue[700],
-      ),
-      body: Column(
+      appBar: const CustomAppBar(title: 'Tracking SKA'),
+      backgroundColor: AppTheme.backgroundColor,
+      body: ListView(
+        padding: const EdgeInsets.all(16),
         children: [
-          // Search bar
-          Padding(
-            padding: const EdgeInsets.all(12),
-            child: TextField(
-              decoration: InputDecoration(
-                hintText: 'Cari nomor aju, eksportir...',
-                prefixIcon: const Icon(Icons.search),
-                border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
-              ),
-            ),
+          _buildSearchBar(),
+          const SizedBox(height: 16),
+          ...dummyTracking
+              .map((data) => _buildTrackingCard(context, data))
+              .toList(),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildSearchBar() {
+    return TextField(
+      decoration: InputDecoration(
+        hintText: 'Cari nomor aju, eksportir...',
+        prefixIcon: const Icon(Icons.search),
+        filled: true,
+        fillColor: AppTheme.whiteColor,
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: BorderSide(color: Colors.grey.shade300),
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: BorderSide(color: Colors.grey.shade300),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: const BorderSide(color: AppTheme.primaryColor),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildTrackingCard(BuildContext context, Map<String, String> data) {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 16),
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: AppTheme.whiteColor,
+        borderRadius: BorderRadius.circular(16),
+        boxShadow: [
+          BoxShadow(
+            color: AppTheme.primaryColor.withOpacity(0.05),
+            blurRadius: 8,
+            offset: const Offset(0, 4),
           ),
-          Expanded(
-            child: ListView.builder(
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-              itemCount: skaList.length,
-              itemBuilder: (context, index) {
-                final item = skaList[index];
-                return _SkaCard(data: item);
-              },
-            ),
+        ],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Row status + form
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              _buildStatusBadge(data['status']!),
+              Text(data['form']!, style: AppTheme.textBold13),
+            ],
+          ),
+          const SizedBox(height: 12),
+          _buildInfo('Eksportir', data['eksportir']!),
+          _buildInfo('Nomor Aju', data['nomorAju']!),
+          _buildInfo('Nomor SKA', data['nomorSKA']!),
+          _buildInfo('Negara Tujuan', data['negara']!),
+          _buildInfo('Tanggal Permohonan', data['tanggal']!),
+          const SizedBox(height: 12),
+          Row(
+            children: [
+              _buildActionButton(
+                label: 'Lihat',
+                color: Colors.green.shade100,
+                onTap: () {
+                  Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (_) => DetailSkaPage()),
+                      );;
+                },
+              ),
+              const SizedBox(width: 12),
+              if (data['status'] == 'Diterbitkan')
+                _buildActionButton(
+                  label: 'Download',
+                  color: Colors.green.shade50,
+                  onTap: () {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(content: Text('Mengunduh dokumen SKA...')),
+                    );
+                  },
+                ),
+              if (data['status'] == 'Revisi')
+                _buildActionButton(
+                  label: 'Verifikasi',
+                  color: Colors.orange.shade100,
+                  onTap: () {},
+                ),
+            ],
           ),
         ],
       ),
     );
   }
-}
 
-class _SkaCard extends StatelessWidget {
-  final Map<String, String> data;
+  Widget _buildStatusBadge(String status) {
+    Color bgColor;
+    Color textColor;
 
-  const _SkaCard({required this.data});
-
-  Color _getStatusColor(String status) {
     switch (status) {
       case 'Diterbitkan':
-        return Colors.green;
-      case 'Ditolak':
-        return Colors.red;
+        bgColor = Colors.green.shade100;
+        textColor = Colors.green;
+        break;
       case 'Revisi':
-        return Colors.orange;
-      case 'Diproses':
-        return Colors.blue;
+        bgColor = Colors.orange.shade100;
+        textColor = Colors.orange.shade800;
+        break;
+      case 'Ditolak':
+        bgColor = Colors.red.shade100;
+        textColor = Colors.red;
+        break;
       default:
-        return Colors.grey;
+        bgColor = Colors.grey.shade300;
+        textColor = Colors.black;
     }
+
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+      decoration: BoxDecoration(
+        color: bgColor,
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: Text(status, style: TextStyle(fontSize: 12, color: textColor)),
+    );
   }
 
-  List<String> _getActionForStatus(String status) {
-    switch (status) {
-      case 'Diterbitkan':
-        return ['Lihat', 'Download'];
-      case 'Revisi':
-        return ['Lihat', 'Verifikasi'];
-      case 'Ditolak':
-        return ['Lihat'];
-      case 'Diproses':
-        return ['Lihat', 'Verifikasi'];
-      default:
-        return ['Lihat'];
-    }
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final actions = _getActionForStatus(data['status']!);
-
-    return Card(
-      margin: const EdgeInsets.only(bottom: 12),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      child: Padding(
-        padding: const EdgeInsets.all(12),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+  Widget _buildInfo(String label, String value) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 4),
+      child: Text.rich(
+        TextSpan(
           children: [
-            // Top row: status + form
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Chip(
-                  label: Text(data['status']!),
-                  backgroundColor: _getStatusColor(data['status']!).withOpacity(0.2),
-                  labelStyle: TextStyle(color: _getStatusColor(data['status']!)),
-                ),
-                Text(data['form']!, style: const TextStyle(fontWeight: FontWeight.bold)),
-              ],
-            ),
-            const SizedBox(height: 8),
-            Text('Eksportir: ${data['eksportir']}'),
-            Text('Nomor Aju: ${data['nomorAju']}'),
-            Text('Nomor SKA: ${data['nomorSKA']}'),
-            Text('Negara Tujuan: ${data['negara']}'),
-            Text('Tanggal Permohonan: ${data['tanggal']}'),
-            const SizedBox(height: 8),
-            Wrap(
-              spacing: 8,
-              children: actions.map((label) {
-                return ElevatedButton(
-                  onPressed: () {
-                    if (label == 'Lihat') {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (_) => DetailSkaPage()),
-                      );
-                    } else if (label == 'Verifikasi') {
-                      // Handle verification logic
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(content: Text('Verifikasi untuk ${data['nomorAju']}')),
-                      );
-                    } else if (label == 'Download') {
-                      // Handle download logic
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(content: Text('Download SKA ${data['nomorSKA']}')),
-                      );
-                    }
-                  },
-                  style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-                    backgroundColor: Colors.grey[200],
-                    foregroundColor: Colors.black87,
-                    elevation: 0,
-                  ),
-                  child: Text(label),
-                );
-              }).toList(),
-            ),
+            TextSpan(text: '$label: ', style: AppTheme.textBold13),
+            TextSpan(text: value, style: AppTheme.textRegular13),
           ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildActionButton({
+    required String label,
+    required Color color,
+    required VoidCallback onTap,
+  }) {
+    return Expanded(
+      child: GestureDetector(
+        onTap: onTap,
+        child: Container(
+          alignment: Alignment.center,
+          padding: const EdgeInsets.symmetric(vertical: 10),
+          decoration: BoxDecoration(
+            color: color,
+            borderRadius: BorderRadius.circular(12),
+          ),
+          child: Text(label, style: AppTheme.textBold13),
         ),
       ),
     );
