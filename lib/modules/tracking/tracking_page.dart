@@ -118,7 +118,7 @@ class TrackingPage extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (_) => DetailSkaPage()),
+                        MaterialPageRoute(builder: (_) => DetailSKAPage()),
                       );;
                 },
               ),
