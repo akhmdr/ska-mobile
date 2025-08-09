@@ -189,19 +189,20 @@ class _BerandaPageState extends State<BerandaPage> {
                       borderRadius: BorderRadius.circular(16),
                       child: Stack(
                         children: [
-                          // Placeholder for image
-                          Container(
+                          Image.asset(
+                            banner.imagePath,
                             width: double.infinity,
                             height: double.infinity,
-                            child: const Center(
-                              child: Icon(
-                                Icons.image,
-                                size: 48,
-                                color: AppTheme.onPrimaryColor,
-                              ),
-                            ),
+                            fit: BoxFit.cover,
+                            errorBuilder:
+                                (context, error, stackTrace) => const Center(
+                                  child: Icon(
+                                    Icons.error,
+                                    size: 48,
+                                    color: AppTheme.onPrimaryColor,
+                                  ),
+                                ),
                           ),
-                          // Gradient overlay
                           Container(
                             decoration: BoxDecoration(
                               gradient: LinearGradient(

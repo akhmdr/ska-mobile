@@ -7,11 +7,8 @@ class NewsCard extends StatelessWidget {
   final NewsItem newsItem;
   final VoidCallback? onTap;
 
-  const NewsCard({
-    Key? key,
-    required this.newsItem,
-    this.onTap,
-  }) : super(key: key);
+  const NewsCard({Key? key, required this.newsItem, this.onTap})
+    : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -66,12 +63,12 @@ class NewsCard extends StatelessWidget {
                       ),
                     ),
                     // Uncomment when you have actual images
-                    // Image.asset(
-                    //   newsItem.imagePath,
-                    //   width: double.infinity,
-                    //   height: double.infinity,
-                    //   fit: BoxFit.cover,
-                    // ),
+                    Image.asset(
+                      newsItem.imagePath,
+                      width: double.infinity,
+                      height: double.infinity,
+                      fit: BoxFit.cover,
+                    ),
                   ],
                 ),
               ),
@@ -107,10 +104,7 @@ class NewsCard extends StatelessWidget {
                       const SizedBox(width: 4),
                       Text(
                         newsItem.date,
-                        style: TextStyle(
-                          fontSize: 11,
-                          color: Colors.grey[500],
-                        ),
+                        style: TextStyle(fontSize: 11, color: Colors.grey[500]),
                       ),
                     ],
                   ),

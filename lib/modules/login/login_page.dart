@@ -57,7 +57,7 @@ class _LoginPageState extends State<LoginPage> {
 
               // Logo Section
               _buildLogoSection(),
-              
+
               const SizedBox(height: 48),
 
               // Quick Login Options
@@ -108,43 +108,19 @@ class _LoginPageState extends State<LoginPage> {
           ),
           child: Column(
             children: [
-              // Main logos (using placeholders since assets may not exist)
-              Container(
-                height: 60,
-                width: 200,
-                decoration: BoxDecoration(
-                  color: AppTheme.primaryColor.withOpacity(0.1),
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: const Center(
-                  child: Text(
-                    'KEMENDAG',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: AppTheme.primaryColor,
-                    ),
-                  ),
-                ),
+              // Replace with your asset image
+              Image.asset(
+                'assets/images/logo_kemendag.png',
+                height: 40,
+                width: 100,
+                fit: BoxFit.contain,
               ),
               const SizedBox(height: 12),
-              Container(
+              Image.asset(
+                'assets/images/logo_eska.png',
                 height: 40,
                 width: 150,
-                decoration: BoxDecoration(
-                  color: AppTheme.secondaryColor.withOpacity(0.1),
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: const Center(
-                  child: Text(
-                    'e-SKA',
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w600,
-                      color: AppTheme.secondaryColor,
-                    ),
-                  ),
-                ),
+                fit: BoxFit.contain,
               ),
             ],
           ),
@@ -160,9 +136,9 @@ class _LoginPageState extends State<LoginPage> {
         const SizedBox(height: 8),
         Text(
           'Masuk untuk melanjutkan ke e-SKA',
-          style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-            color: Colors.grey[600],
-          ),
+          style: Theme.of(
+            context,
+          ).textTheme.bodyLarge?.copyWith(color: Colors.grey[600]),
           textAlign: TextAlign.center,
         ),
       ],
@@ -253,9 +229,7 @@ class _LoginPageState extends State<LoginPage> {
           decoration: InputDecoration(
             hintText: 'Username',
             prefixIcon: const Icon(Icons.person_outline),
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
+            border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
           ),
         ),
         const SizedBox(height: 16),
@@ -278,9 +252,7 @@ class _LoginPageState extends State<LoginPage> {
                 });
               },
             ),
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
+            border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
           ),
         ),
 
@@ -315,22 +287,23 @@ class _LoginPageState extends State<LoginPage> {
                 borderRadius: BorderRadius.circular(12),
               ),
             ),
-            child: _isLoading
-                ? const SizedBox(
-                    height: 20,
-                    width: 20,
-                    child: CircularProgressIndicator(
-                      color: AppTheme.onPrimaryColor,
-                      strokeWidth: 2,
+            child:
+                _isLoading
+                    ? const SizedBox(
+                      height: 20,
+                      width: 20,
+                      child: CircularProgressIndicator(
+                        color: AppTheme.onPrimaryColor,
+                        strokeWidth: 2,
+                      ),
+                    )
+                    : const Text(
+                      'Masuk',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
-                  )
-                : const Text(
-                    'Masuk',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
           ),
         ),
       ],
@@ -373,9 +346,7 @@ class _LoginPageState extends State<LoginPage> {
               'Daftar menggunakan akun OSS',
               style: TextStyle(fontWeight: FontWeight.w600),
             ),
-            style: TextButton.styleFrom(
-              foregroundColor: AppTheme.primaryColor,
-            ),
+            style: TextButton.styleFrom(foregroundColor: AppTheme.primaryColor),
           ),
         ],
       ),
@@ -387,10 +358,7 @@ class _LoginPageState extends State<LoginPage> {
       children: [
         Text(
           'Copyright ©2025 | Kementerian Perdagangan',
-          style: TextStyle(
-            color: Colors.grey[600],
-            fontSize: 12,
-          ),
+          style: TextStyle(color: Colors.grey[600], fontSize: 12),
           textAlign: TextAlign.center,
         ),
         const SizedBox(height: 8),
