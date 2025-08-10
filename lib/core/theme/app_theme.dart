@@ -77,6 +77,9 @@ class AppTheme {
       useMaterial3: true,
       colorScheme: colorScheme,
       scaffoldBackgroundColor: backgroundColor,
+      splashColor: primaryColor.withOpacity(0.12),
+      highlightColor: primaryColor.withOpacity(0.08),
+      hoverColor: primaryColor.withOpacity(0.04),
 
       // TabBar Theme
       tabBarTheme: const TabBarThemeData(
@@ -139,6 +142,7 @@ class AppTheme {
             fontWeight: FontWeight.w600,
             color: onPrimaryColor,
           ),
+          overlayColor: onPrimaryColor.withOpacity(0.12),
         ),
       ),
 
@@ -150,6 +154,7 @@ class AppTheme {
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
           textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+          overlayColor: primaryColor.withOpacity(0.08),
         ),
       ),
 
@@ -159,6 +164,8 @@ class AppTheme {
           foregroundColor: primaryColor,
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
           textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+        ).copyWith(
+          overlayColor: WidgetStatePropertyAll(primaryColor.withOpacity(0.08)),
         ),
       ),
 
@@ -187,6 +194,8 @@ class AppTheme {
           vertical: 12,
         ),
         hintStyle: TextStyle(color: Colors.grey[600]),
+        hoverColor: surfaceColor,
+        focusColor: primaryColor,
       ),
 
       // List Tile Theme
