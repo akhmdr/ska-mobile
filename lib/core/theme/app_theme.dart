@@ -312,4 +312,13 @@ class AppTheme {
       ),
     );
   }
+
+  static const Color scaffoldColor = Color(0xFFF5F5F5);
+  static final List<BoxShadow> cardShadow = [
+    BoxShadow(
+      color: Colors.black.withOpacity(0.05),
+      blurRadius: 8,
+      offset: Offset(0, 2),
+    ),
+  ];
 }

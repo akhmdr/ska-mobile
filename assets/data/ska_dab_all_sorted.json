@@ -1,0 +1,894 @@
+[
+  {
+    "no": 1,
+    "pengajuan": {
+      "nama_eksportir": "PT DEMO EKSPORTIR",
+      "npwp": "123456789012098",
+      "kota_eksportir": "Jakarta Timur",
+      "no_aju": "II202210110001",
+      "tgl_kirim": "2022-10-11 10:35:02",
+      "no_ska": "1000004/DIT/2022",
+      "cara_daftar": "WEBSITE"
+    },
+    "importir": {
+      "nama_importir": "Pt Importir",
+      "negara_importir": "AUSTRALIA",
+      "nama_sarana_pengangkut": "Garuda Indonesia GA-343",
+      "jenis_transportasi": "by AIR",
+      "plb_muat": "IDCGK, Soekarno Hatta",
+      "plb_bongkar": "AUABX, Albury",
+      "tgl_rencana_ekspor": "11 Oktober 2022"
+    },
+    "form": {
+      "jenis_form": "Konvensional",
+      "tipe_form": "FORM AANZ",
+      "kantor_ipska": "DITFAS",
+      "serial_blangko": "-",
+      "no_invoice": "12221/INV/2022",
+      "no_doc_pabean": "123456",
+      "kppbc": "KANTOR PELAYANAN UTAMA BEA DAN CUKAI TIPE C SOEKARNO-HATTA"
+    },
+    "status": {
+      "status_pengajuan": "Pencabutan",
+      "waktu_status": "20 Desember 2022 15:51:44",
+      "user_proses": "ipskademo",
+      "jenis_pengajuan": "Baru",
+      "cetak_form": "DONE",
+      "pengiriman_sinsw": "N/A",
+      "waktu_kirim_sinsw": "N/A"
+    }
+  },
+  {
+    "no": 2,
+    "pengajuan": {
+      "nama_eksportir": "PT TESTING TIM PROSIA",
+      "npwp": "123456789098765",
+      "kota_eksportir": "KOTA ADM. JAKARTA PUSAT",
+      "no_aju": "II202210270039",
+      "tgl_kirim": "2022-10-27 14:01:42",
+      "no_ska": "1000007/DIT/2022",
+      "cara_daftar": "WEBSITE"
+    },
+    "importir": {
+      "nama_importir": "WIL FASHION CO., LTD.",
+      "negara_importir": "REPUBLIC OF KOREA",
+      "nama_sarana_pengangkut": "KE0628",
+      "jenis_transportasi": "by AIR",
+      "plb_muat": "IDCGK, Soekarno Hatta",
+      "plb_bongkar": "KRINC, Incheon",
+      "tgl_rencana_ekspor": "26 Oktober 2022"
+    },
+    "form": {
+      "jenis_form": "eForm",
+      "tipe_form": "FORM AK",
+      "kantor_ipska": "DITFAS",
+      "serial_blangko": "N/A",
+      "no_invoice": "CWL-172/TIA/X/22",
+      "no_doc_pabean": "447771",
+      "kppbc": "KANTOR PELAYANAN UTAMA BEA DAN CUKAI TIPE C SOEKARNO-HATTA"
+    },
+    "status": {
+      "status_pengajuan": "Pencabutan",
+      "waktu_status": "21 Agustus 2023 15:05:57",
+      "user_proses": "ipskajakbartest",
+      "jenis_pengajuan": "Baru",
+      "cetak_form": "DONE",
+      "pengiriman_sinsw": "DONE",
+      "waktu_kirim_sinsw": "08 November 2022 16:50:17"
+    }
+  },
+  {
+    "no": 3,
+    "pengajuan": {
+      "nama_eksportir": "PT DEMO EKSPORTIR",
+      "npwp": "123456789012098",
+      "kota_eksportir": "KOTA ADM. JAKARTA PUSAT",
+      "no_aju": "II202210270011",
+      "tgl_kirim": "2022-10-30 18:06:36",
+      "no_ska": "1000006/DIT/2022",
+      "cara_daftar": "WEBSITE"
+    },
+    "importir": {
+      "nama_importir": "Berjaya Corporation Berhad",
+      "negara_importir": "MALAYSIA",
+      "nama_sarana_pengangkut": "VESSEL",
+      "jenis_transportasi": "by SEA",
+      "plb_muat": "IDJKT, Tg. Priok Jakarta",
+      "plb_bongkar": "MYKLJ, Kelana Jaya",
+      "tgl_rencana_ekspor": "28 Oktober 2022"
+    },
+    "form": {
+      "jenis_form": "Konvensional",
+      "tipe_form": "FORM GSTP",
+      "kantor_ipska": "DITFAS",
+      "serial_blangko": "-",
+      "no_invoice": "INV/10/22",
+      "no_doc_pabean": "123345",
+      "kppbc": "KANTOR PELAYANAN UTAMA BEA DAN CUKAI TIPE A TANJUNG PRIOK"
+    },
+    "status": {
+      "status_pengajuan": "Pencabutan",
+      "waktu_status": "01 Desember 2022 01:19:29",
+      "user_proses": "ipskademo",
+      "jenis_pengajuan": "Baru",
+      "cetak_form": "DONE",
+      "pengiriman_sinsw": "N/A",
+      "waktu_kirim_sinsw": "N/A"
+    }
+  },
+  {
+    "no": 3,
+    "pengajuan": {
+      "nama_perusahaan": "DEMO EKSPORTIR",
+      "nib": "1234567891234",
+      "npwp": "123456789012098",
+      "kota_eksportir": "KOTA ADM. JAKARTA PUSAT",
+      "nama_user": "eksportirdemo",
+      "no_aju": "II202410112465",
+      "tgl_daftar": "11 Oktober 2024, 13:56:27",
+      "tgl_kirim": "2024-10-11 13:59:46",
+      "tgl_proses": "11 Oktober 2024, 14:02:06",
+      "no_ska": "0000038/DIT/2024",
+      "tgl_terbit": "11 Oktober 2024",
+      "cara_daftar": "WEBSITE"
+    },
+    "importir": {
+      "nama_importir": "Demo PDSI",
+      "negara_importir": "HONG KONG",
+      "nama_sarana_pengangkut": "SEA",
+      "jenis_transportasi": "by SEA",
+      "plb_muat": "IDTPP, Tanjung Priok",
+      "plb_bongkar": "CNAGG, Dagang",
+      "tgl_rencana_ekspor": "11 Oktober 2024"
+    },
+    "form": {
+      "jenis_form": "Konvensional",
+      "tipe_form": "FORM AHKFTA",
+      "kantor_ipska": "DITFAS",
+      "no_invoice": "demo/inv",
+      "no_doc_pabean": "demo/peb",
+      "kppbc": "KANTOR PELAYANAN UTAMA BEA DAN CUKAI TIPE A TANJUNG PRIOK"
+    },
+    "status": {
+      "status_pengajuan": "Request Revisi",
+      "keterangan": "setujui",
+      "waktu_status": "25 April 2025, 15:04:44",
+      "jenis_pengajuan": "Baru",
+      "cetak_form": "-",
+      "pengiriman_sinsw": "N/A",
+      "waktu_kirim_sinsw": "N/A"
+    }
+  },
+  {
+    "no": 2,
+    "pengajuan": {
+      "nama_perusahaan": "DEMO EKSPORTIR",
+      "nib": "1234567891234",
+      "npwp": "123456789012098",
+      "kota_eksportir": "KOTA ADM. JAKARTA PUSAT",
+      "nama_user": "eksportirdemo",
+      "no_aju": "II202410151589",
+      "tgl_daftar": "15 Oktober 2024, 10:47:37",
+      "tgl_kirim": "2024-10-15 10:57:03",
+      "tgl_proses": "15 Oktober 2024, 11:01:24",
+      "no_ska": "0000048/DIT/2024",
+      "tgl_terbit": "15 Oktober 2024",
+      "cara_daftar": "WEBSITE"
+    },
+    "importir": {
+      "nama_importir": "PT AIRBERSIH",
+      "negara_importir": "ARGENTINA",
+      "nama_sarana_pengangkut": "PT.AIRBERSIH",
+      "jenis_transportasi": "by AIR",
+      "plb_muat": "IDANC, Ancol",
+      "plb_bongkar": "THLCH, Laem Chabang - Thailand",
+      "tgl_rencana_ekspor": "05 Oktober 2024"
+    },
+    "form": {
+      "jenis_form": "Konvensional",
+      "tipe_form": "FORM B",
+      "kantor_ipska": "DITFAS",
+      "serial_blangko": "B-CUA-0021",
+      "no_invoice": "1234567654321",
+      "no_doc_pabean": "123454321",
+      "kppbc": "KANTOR WILAYAH DJBC JAKARTA"
+    },
+    "status": {
+      "status_pengajuan": "Request Revisi",
+      "keterangan": "-",
+      "waktu_status": "25 April 2025, 15:03:20",
+      "jenis_pengajuan": "Baru",
+      "cetak_form": "-",
+      "pengiriman_sinsw": "N/A",
+      "waktu_kirim_sinsw": "N/A"
+    }
+  },
+  {
+    "no": 3,
+    "pengajuan": {
+      "nama_perusahaan": "DEMO EKSPORTIR",
+      "nib": "1234567891234",
+      "npwp": "123456789012098",
+      "kota_eksportir": "KOTA ADM. JAKARTA PUSAT",
+      "nama_user": "eksportirdemo",
+      "no_aju": "II202412313183",
+      "tgl_daftar": "31 Desember 2024, 20:36:29",
+      "tgl_kirim": "2024-12-31 21:03:27",
+      "tgl_proses": "31 Desember 2024, 21:06:55",
+      "no_ska": "-",
+      "tgl_terbit": "-",
+      "cara_daftar": "WEBSITE"
+    },
+    "importir": {
+      "nama_importir": "KOREA CO LTD",
+      "negara_importir": "REPUBLIC OF KOREA",
+      "nama_sarana_pengangkut": "transport",
+      "jenis_transportasi": "by AIR",
+      "plb_muat": "ID5TR, Trenggalek",
+      "plb_bongkar": "ADENC, Encamp",
+      "tgl_rencana_ekspor": "31 Desember 2024"
+    },
+    "form": {
+      "jenis_form": "Konvensional",
+      "tipe_form": "FORM AK",
+      "kantor_ipska": "DITFAS",
+      "no_invoice": "ak/blangko",
+      "no_doc_pabean": "peb",
+      "kppbc": "KANTOR PENGAWASAN DAN PELAYANAN BEA DAN CUKAI TIPE MADYA PABEAN B PEKANBARU"
+    },
+    "status": {
+      "status_pengajuan": "Ditolak",
+      "keterangan": "tolak ska agar tidak keblokir",
+      "waktu_status": "28 April 2025, 17:16:10",
+      "jenis_pengajuan": "Baru",
+      "cetak_form": "-",
+      "pengiriman_sinsw": "N/A",
+      "waktu_kirim_sinsw": "N/A"
+    }
+  },
+  {
+    "no": 2,
+    "pengajuan": {
+      "nama_perusahaan": "DEMO EKSPORTIR",
+      "nib": "1234567891234",
+      "npwp": "123456789012098",
+      "kota_eksportir": "KOTA ADM. JAKARTA PUSAT",
+      "nama_user": "eksportirdemo",
+      "no_aju": "II202501132361",
+      "tgl_daftar": "13 Januari 2025, 13:07:51",
+      "tgl_kirim": "2025-01-14 08:15:41",
+      "tgl_proses": "14 Januari 2025, 13:45:55",
+      "no_ska": "0000006/DIT/2025",
+      "tgl_terbit": "14 Januari 2025",
+      "cara_daftar": "WEBSITE"
+    },
+    "importir": {
+      "nama_importir": "PT Sinar Maju",
+      "negara_importir": "MALAYSIA",
+      "nama_sarana_pengangkut": "abc",
+      "jenis_transportasi": "by SEA",
+      "plb_muat": "IDDUM, Dumai",
+      "plb_bongkar": "MYNTL, Penang",
+      "tgl_rencana_ekspor": "15 Januari 2025"
+    },
+    "form": {
+      "jenis_form": "Konvensional",
+      "tipe_form": "FORM RCEP",
+      "kantor_ipska": "DITFAS",
+      "no_invoice": "12890004567123",
+      "no_doc_pabean": "2134765",
+      "kppbc": "KANTOR PENGAWASAN DAN PELAYANAN BEA DAN CUKAI TIPE MADYA PABEAN B DUMAI"
+    },
+    "status": {
+      "status_pengajuan": "Pengajuan Cabut SKA",
+      "keterangan": "verifikasi dari negara belum dijawab",
+      "waktu_status": "15 Januari 2025, 09:36:03",
+      "jenis_pengajuan": "Baru",
+      "cetak_form": "-",
+      "pengiriman_sinsw": "N/A",
+      "waktu_kirim_sinsw": "N/A"
+    }
+  },
+  {
+    "no": 2,
+    "pengajuan": {
+      "nama_perusahaan": "DEMO EKSPORTIR",
+      "nib": "1234567891234",
+      "npwp": "123456789012098",
+      "kota_eksportir": "KOTA ADM. JAKARTA PUSAT",
+      "nama_user": "eksportirdemo",
+      "no_aju": "II202501142428",
+      "tgl_daftar": "14 Januari 2025, 13:17:49",
+      "tgl_kirim": "2025-01-15 11:52:42",
+      "tgl_proses": "16 Januari 2025, 14:06:40",
+      "no_ska": "-",
+      "tgl_terbit": "-",
+      "cara_daftar": "WEBSITE"
+    },
+    "importir": {
+      "nama_importir": "Nabilah",
+      "negara_importir": "REPUBLIC OF KOREA",
+      "nama_sarana_pengangkut": "Vessel",
+      "jenis_transportasi": "by SEA",
+      "plb_muat": "ID5BT, Batubantar",
+      "plb_bongkar": "KRASA, Asan",
+      "tgl_rencana_ekspor": "15 Januari 2025"
+    },
+    "form": {
+      "jenis_form": "eForm",
+      "tipe_form": "FORM AK",
+      "kantor_ipska": "DITFAS",
+      "no_invoice": "23456788",
+      "no_doc_pabean": "123456789",
+      "kppbc": "KANTOR PENGAWASAN DAN PELAYANAN BEA DAN CUKAI TIPE MADYA PABEAN B MEDAN"
+    },
+    "status": {
+      "status_pengajuan": "Ditolak",
+      "keterangan": "dhjhf",
+      "waktu_status": "16 Januari 2025, 14:07:13",
+      "jenis_pengajuan": "Baru",
+      "cetak_form": "-",
+      "pengiriman_sinsw": "DONE",
+      "waktu_kirim_sinsw": "-"
+    }
+  },
+  {
+    "no": 1,
+    "pengajuan": {
+      "nama_perusahaan": "DEMO EKSPORTIR",
+      "nib": "1234567891234",
+      "npwp": "123456789012098",
+      "kota_eksportir": "Jakarta Pusat",
+      "nama_user": "eksportirdemo",
+      "no_aju": "II202501162828",
+      "tgl_daftar": "16 Januari 2025, 14:45:51",
+      "tgl_kirim": "2025-01-16 14:56:33",
+      "tgl_proses": "16 Januari 2025, 15:12:04",
+      "no_ska": "0000010/DIT/2025",
+      "tgl_terbit": "16 Januari 2025",
+      "cara_daftar": "WEBSITE"
+    },
+    "importir": {
+      "nama_importir": "PT RISET PERKEBUNAN NUSANTARA",
+      "negara_importir": "INDIA",
+      "nama_sarana_pengangkut": "TEMAS LINE",
+      "jenis_transportasi": "by SEA",
+      "plb_muat": "IDTPP, Tanjung Priok - Jakarta",
+      "plb_bongkar": "INBOM, Mumbai (Ex Bombay)",
+      "tgl_rencana_ekspor": "17 Januari 2025"
+    },
+    "form": {
+      "jenis_form": "Konvensional",
+      "tipe_form": "FORM AI",
+      "kantor_ipska": "DITFAS",
+      "no_invoice": "12345",
+      "no_doc_pabean": "12345678",
+      "kppbc": "KANTOR PELAYANAN UTAMA BEA DAN CUKAI TIPE A TANJUNG PRIOK"
+    },
+    "status": {
+      "status_pengajuan": "Request Revisi",
+      "keterangan": "SETUJUI",
+      "waktu_status": "25 April 2025, 15:02:48",
+      "jenis_pengajuan": "Baru",
+      "cetak_form": "-",
+      "pengiriman_sinsw": "N/A",
+      "waktu_kirim_sinsw": "N/A"
+    }
+  },
+  {
+    "no": 3,
+    "pengajuan": {
+      "nama_perusahaan": "DEMO EKSPORTIR",
+      "nib": "1234567891234",
+      "npwp": "123456789012098",
+      "kota_eksportir": "KOTA ADM. JAKARTA PUSAT",
+      "nama_user": "eksportirdemo",
+      "no_aju": "II202411133513",
+      "tgl_daftar": "13 November 2024, 15:28:07",
+      "tgl_kirim": "2025-01-23 16:45:58",
+      "tgl_proses": "23 Januari 2025, 16:46:45",
+      "no_ska": "0000017/DIT/2025",
+      "tgl_terbit": "23 Januari 2025",
+      "cara_daftar": "WEBSITE"
+    },
+    "importir": {
+      "nama_importir": "Rifki Ramadona",
+      "negara_importir": "JAPAN",
+      "nama_sarana_pengangkut": "Pelatihan SKA 2024",
+      "jenis_transportasi": "by SEA",
+      "plb_muat": "IDMRK, Merak",
+      "plb_bongkar": "JPAAE, Tsubata, Ishikawa",
+      "tgl_rencana_ekspor": "16 Oktober 2024"
+    },
+    "form": {
+      "jenis_form": "eForm",
+      "tipe_form": "FORM IJEPA",
+      "kantor_ipska": "DITFAS",
+      "no_invoice": "1333111",
+      "no_doc_pabean": "dok-peb",
+      "kppbc": "KANTOR PENGAWASAN DAN PELAYANAN BEA DAN CUKAI TIPE MADYA PABEAN MERAK"
+    },
+    "status": {
+      "status_pengajuan": "Pengajuan Cabut SKA",
+      "keterangan": "Revisi nama kapal",
+      "waktu_status": "26 Juni 2025, 10:38:53",
+      "jenis_pengajuan": "Baru",
+      "cetak_form": "-",
+      "pengiriman_sinsw": "DONE",
+      "waktu_kirim_sinsw": "23 Januari 2025, 16:55:41"
+    }
+  },
+  {
+    "no": 1,
+    "pengajuan": {
+      "nama_perusahaan": "DEMO EKSPORTIR",
+      "nib": "1234567891234",
+      "npwp": "123456789012098",
+      "kota_eksportir": "KOTA ADM. JAKARTA PUSAT",
+      "nama_user": "eksportirdemo",
+      "no_aju": "II202504250872",
+      "tgl_daftar": "25 April 2025, 09:43:33",
+      "tgl_kirim": "2025-04-25 10:09:19",
+      "tgl_proses": "02 Juni 2025, 10:41:59",
+      "no_ska": "-",
+      "tgl_terbit": "-",
+      "cara_daftar": "WEBSITE"
+    },
+    "importir": {
+      "nama_importir": "Abdul Rahman 1",
+      "negara_importir": "MALAYSIA",
+      "nama_sarana_pengangkut": "Abd Maritim",
+      "jenis_transportasi": "by SEA",
+      "plb_muat": "IDTPE, Tanjung Perak",
+      "plb_bongkar": "MYKUL, Kuala Lumpur",
+      "tgl_rencana_ekspor": "26 April 2025"
+    },
+    "form": {
+      "jenis_form": "Konvensional",
+      "tipe_form": "FORM B",
+      "kantor_ipska": "DITFAS",
+      "no_invoice": "12345",
+      "no_doc_pabean": "12345",
+      "kppbc": "KANTOR PENGAWASAN DAN PELAYANAN BEA DAN CUKAI TIPE MADYA PABEAN TANJUNG PERAK"
+    },
+    "status": {
+      "status_pengajuan": "Ditolak",
+      "keterangan": "mohon lengkapi data contohnya",
+      "waktu_status": "02 Juni 2025, 10:42:37",
+      "jenis_pengajuan": "Baru",
+      "cetak_form": "-",
+      "pengiriman_sinsw": "N/A",
+      "waktu_kirim_sinsw": "N/A"
+    }
+  },
+  {
+    "no": 2,
+    "pengajuan": {
+      "nama_perusahaan": "DEMO EKSPORTIR",
+      "nib": "1234567891234",
+      "npwp": "123456789012098",
+      "kota_eksportir": "KOTA ADM. JAKARTA PUSAT",
+      "nama_user": "eksportirdemo",
+      "no_aju": "II202504251120",
+      "tgl_daftar": "25 April 2025, 10:10:31",
+      "tgl_kirim": "2025-04-25 10:28:35",
+      "tgl_proses": "07 Juli 2025, 08:21:02",
+      "no_ska": "0000067/DIT/2025",
+      "tgl_terbit": "08 Juli 2025",
+      "cara_daftar": "WEBSITE"
+    },
+    "importir": {
+      "nama_importir": "PT MAJU MAPAN",
+      "negara_importir": "MALAYSIA",
+      "nama_sarana_pengangkut": "SINAR SULAWESI",
+      "jenis_transportasi": "by SEA",
+      "plb_muat": "IDSRG, Semarang / Achmad Yani (u)",
+      "plb_bongkar": "BNBWN, Bandar Seri Begawan",
+      "tgl_rencana_ekspor": "28 April 2025"
+    },
+    "form": {
+      "jenis_form": "eForm",
+      "tipe_form": "FORM D",
+      "kantor_ipska": "DITFAS",
+      "no_invoice": "ABCD",
+      "no_doc_pabean": "9120307127418276",
+      "kppbc": "KANTOR PENGAWASAN DAN PELAYANAN BEA DAN CUKAI TIPE MADYA PABEAN TANJUNG EMAS"
+    },
+    "status": {
+      "status_pengajuan": "Diterbitkan",
+      "keterangan": "approve",
+      "waktu_status": "08 Juli 2025, 07:52:28",
+      "jenis_pengajuan": "Baru",
+      "cetak_form": "-",
+      "pengiriman_sinsw": "DONE",
+      "waktu_kirim_sinsw": "-"
+    }
+  },
+  {
+    "no": 1,
+    "pengajuan": {
+      "nama_perusahaan": "DEMO EKSPORTIR",
+      "nib": "1234567891234",
+      "npwp": "123456789012098",
+      "kota_eksportir": "KOTA ADM. JAKARTA PUSAT",
+      "nama_user": "eksportirdemo",
+      "no_aju": "II202504251309",
+      "tgl_daftar": "25 April 2025, 10:31:03",
+      "tgl_kirim": "2025-04-25 11:04:33",
+      "tgl_proses": "25 April 2025, 13:32:42",
+      "no_ska": "0000049/DIT/2025",
+      "tgl_terbit": "25 April 2025",
+      "cara_daftar": "WEBSITE"
+    },
+    "importir": {
+      "nama_importir": "JULKIPLI 2",
+      "negara_importir": "INDIA",
+      "nama_sarana_pengangkut": "MV",
+      "jenis_transportasi": "by SEA",
+      "plb_muat": "IDBEJ, Berau",
+      "plb_bongkar": "INJGD, Jaigad",
+      "tgl_rencana_ekspor": "25 April 2025"
+    },
+    "form": {
+      "jenis_form": "Konvensional",
+      "tipe_form": "FORM AI",
+      "kantor_ipska": "DITFAS",
+      "no_invoice": "12",
+      "no_doc_pabean": "12",
+      "kppbc": "KANTOR PENGAWASAN DAN PELAYANAN BEA DAN CUKAI TIPE MADYA PABEAN B TARAKAN"
+    },
+    "status": {
+      "status_pengajuan": "Diterbitkan",
+      "keterangan": "-",
+      "waktu_status": "04 Juli 2025, 15:57:53",
+      "jenis_pengajuan": "Baru",
+      "cetak_form": "-",
+      "pengiriman_sinsw": "N/A",
+      "waktu_kirim_sinsw": "N/A"
+    }
+  },
+  {
+    "no": 1,
+    "pengajuan": {
+      "nama_perusahaan": "DEMO EKSPORTIR",
+      "nib": "1234567891234",
+      "npwp": "123456789012098",
+      "kota_eksportir": "Kota Jakarta",
+      "nama_user": "eksportirdemo",
+      "no_aju": "II202504251516",
+      "tgl_daftar": "25 April 2025, 10:53:12",
+      "tgl_kirim": "2025-04-25 11:10:52",
+      "tgl_proses": "28 April 2025, 07:18:05",
+      "no_ska": "0000062/DIT/2025",
+      "tgl_terbit": "28 April 2025",
+      "cara_daftar": "WEBSITE"
+    },
+    "importir": {
+      "nama_importir": "Dwi Endah Lestari",
+      "negara_importir": "REPUBLIC OF KOREA",
+      "nama_sarana_pengangkut": "Evergreen",
+      "jenis_transportasi": "by SEA",
+      "plb_muat": "IDTES, Tanjung Emas",
+      "plb_bongkar": "KRPNC, Korea Pusan",
+      "tgl_rencana_ekspor": "25 April 2025"
+    },
+    "form": {
+      "jenis_form": "Konvensional",
+      "tipe_form": "FORM AK",
+      "kantor_ipska": "DITFAS",
+      "no_invoice": "1236548",
+      "no_doc_pabean": "12345678",
+      "kppbc": "KANTOR PENGAWASAN DAN PELAYANAN BEA DAN CUKAI TIPE MADYA PABEAN TANJUNG EMAS"
+    },
+    "status": {
+      "status_pengajuan": "Pengajuan Cabut SKA",
+      "keterangan": "Kesalahan penulisan Gross Weight di box 9 COO.",
+      "waktu_status": "14 Juli 2025, 10:06:53",
+      "jenis_pengajuan": "Baru",
+      "cetak_form": "-",
+      "pengiriman_sinsw": "N/A",
+      "waktu_kirim_sinsw": "N/A"
+    }
+  },
+  {
+    "no": 3,
+    "pengajuan": {
+      "nama_perusahaan": "DEMO EKSPORTIR",
+      "nib": "1234567891234",
+      "npwp": "123456789012098",
+      "kota_eksportir": "KOTA ADM. JAKARTA PUSAT",
+      "nama_user": "eksportirdemo",
+      "no_aju": "II202504250879",
+      "tgl_daftar": "25 April 2025, 09:44:24",
+      "tgl_kirim": "2025-04-25 11:13:10",
+      "tgl_proses": "25 April 2025, 13:30:32",
+      "no_ska": "0000031/DIT/2025",
+      "tgl_terbit": "25 April 2025",
+      "cara_daftar": "WEBSITE"
+    },
+    "importir": {
+      "nama_importir": "Veronica Rita V",
+      "negara_importir": "REPUBLIC OF KOREA",
+      "nama_sarana_pengangkut": "Becak kapal",
+      "jenis_transportasi": "by SEA",
+      "plb_muat": "IDJKT, Tg. Priok Jakarta",
+      "plb_bongkar": "KRPNC, Korea Pusan",
+      "tgl_rencana_ekspor": "25 April 2025"
+    },
+    "form": {
+      "jenis_form": "Konvensional",
+      "tipe_form": "FORM AK",
+      "kantor_ipska": "DITFAS",
+      "no_invoice": "Inv 1234",
+      "no_doc_pabean": "54321",
+      "kppbc": "KANTOR PELAYANAN UTAMA BEA DAN CUKAI TIPE A TANJUNG PRIOK"
+    },
+    "status": {
+      "status_pengajuan": "Diterbitkan",
+      "keterangan": "-",
+      "waktu_status": "04 Juli 2025, 15:56:59",
+      "jenis_pengajuan": "Baru",
+      "cetak_form": "-",
+      "pengiriman_sinsw": "N/A",
+      "waktu_kirim_sinsw": "N/A"
+    }
+  },
+  {
+    "no": 2,
+    "pengajuan": {
+      "nama_perusahaan": "DEMO EKSPORTIR",
+      "nib": "1234567891234",
+      "npwp": "123456789012098",
+      "kota_eksportir": "KOTA ADM. JAKARTA PUSAT",
+      "nama_user": "eksportirdemo",
+      "no_aju": "II202504251638",
+      "tgl_daftar": "25 April 2025, 11:06:50",
+      "tgl_kirim": "2025-04-25 11:17:33",
+      "tgl_proses": "25 April 2025, 13:08:38",
+      "no_ska": "0000026/DIT/2025",
+      "tgl_terbit": "25 April 2025",
+      "cara_daftar": "WEBSITE"
+    },
+    "importir": {
+      "nama_importir": "ayu januarista",
+      "negara_importir": "REPUBLIC OF KOREA",
+      "nama_sarana_pengangkut": "garuda",
+      "jenis_transportasi": "by AIR",
+      "plb_muat": "IDSUB, Surabaya /juanda (u)",
+      "plb_bongkar": "SGSCT, Singapore Container Terminal",
+      "tgl_rencana_ekspor": "26 April 2025"
+    },
+    "form": {
+      "jenis_form": "eForm",
+      "tipe_form": "FORM AK",
+      "kantor_ipska": "DITFAS",
+      "no_invoice": "12345ayu",
+      "no_doc_pabean": "1123",
+      "kppbc": "KANTOR PENGAWASAN DAN PELAYANAN BEA DAN CUKAI TIPE MADYA PABEAN JUANDA"
+    },
+    "status": {
+      "status_pengajuan": "Verifikasi",
+      "keterangan": "-",
+      "waktu_status": "28 April 2025, 10:19:23",
+      "jenis_pengajuan": "Baru",
+      "cetak_form": "-",
+      "pengiriman_sinsw": "DONE",
+      "waktu_kirim_sinsw": "25 April 2025, 13:20:50"
+    }
+  },
+  {
+    "no": 3,
+    "pengajuan": {
+      "nama_perusahaan": "DEMO EKSPORTIR",
+      "nib": "1234567891234",
+      "npwp": "123456789012098",
+      "kota_eksportir": "DKI JAkarta",
+      "nama_user": "eksportirdemo",
+      "no_aju": "II202504251401",
+      "tgl_daftar": "25 April 2025, 10:41:07",
+      "tgl_kirim": "2025-04-25 13:54:45",
+      "tgl_proses": "25 April 2025, 14:50:03",
+      "no_ska": "0000059/DIT/2025",
+      "tgl_terbit": "25 April 2025",
+      "cara_daftar": "WEBSITE"
+    },
+    "importir": {
+      "nama_importir": "Jamilah",
+      "negara_importir": "BANGLADESH",
+      "nama_sarana_pengangkut": "Kapal Cargo",
+      "jenis_transportasi": "by SEA",
+      "plb_muat": "IDTSG, Tanjung Sangata",
+      "plb_bongkar": "AUBGW, Bangalow",
+      "tgl_rencana_ekspor": "25 April 2025"
+    },
+    "form": {
+      "jenis_form": "Konvensional",
+      "tipe_form": "FORM B",
+      "kantor_ipska": "DITFAS",
+      "no_invoice": "123",
+      "no_doc_pabean": "34",
+      "kppbc": "KANTOR PENGAWASAN DAN PELAYANAN BEA DAN CUKAI TIPE MADYA PABEAN C SANGATTA"
+    },
+    "status": {
+      "status_pengajuan": "Verifikasi",
+      "keterangan": "disetujui",
+      "waktu_status": "28 April 2025, 10:19:30",
+      "jenis_pengajuan": "Baru",
+      "cetak_form": "-",
+      "pengiriman_sinsw": "N/A",
+      "waktu_kirim_sinsw": "N/A"
+    }
+  },
+  {
+    "no": 1,
+    "pengajuan": {
+      "nama_perusahaan": "DEMO EKSPORTIR",
+      "nib": "1234567891234",
+      "npwp": "123456789012098",
+      "kota_eksportir": "KOTA ADM. JAKARTA PUSAT",
+      "nama_user": "eksportirdemo",
+      "no_aju": "II202504252456",
+      "tgl_daftar": "25 April 2025, 13:49:12",
+      "tgl_kirim": "2025-04-25 13:57:14",
+      "tgl_proses": "25 April 2025, 13:57:46",
+      "no_ska": "0000046/DIT/2025",
+      "tgl_terbit": "25 April 2025",
+      "cara_daftar": "WEBSITE"
+    },
+    "importir": {
+      "nama_importir": "muhtadi",
+      "negara_importir": "UNITED STATES OF AMERICA",
+      "nama_sarana_pengangkut": "maersk",
+      "jenis_transportasi": "by SEA",
+      "plb_muat": "IDTPP, Tanjung Priok",
+      "plb_bongkar": "GBNWY, New York",
+      "tgl_rencana_ekspor": "25 April 2025"
+    },
+    "form": {
+      "jenis_form": "Konvensional",
+      "tipe_form": "FORM B",
+      "kantor_ipska": "DITFAS",
+      "no_invoice": "in234523",
+      "no_doc_pabean": "adsfqe",
+      "kppbc": "KANTOR PELAYANAN UTAMA BEA DAN CUKAI TIPE A TANJUNG PRIOK"
+    },
+    "status": {
+      "status_pengajuan": "Verifikasi",
+      "keterangan": "ok",
+      "waktu_status": "28 April 2025, 10:20:07",
+      "jenis_pengajuan": "Baru",
+      "cetak_form": "-",
+      "pengiriman_sinsw": "N/A",
+      "waktu_kirim_sinsw": "N/A"
+    }
+  },
+  {
+    "no": 2,
+    "pengajuan": {
+      "nama_perusahaan": "DEMO EKSPORTIR",
+      "nib": "1234567891234",
+      "npwp": "123456789012098",
+      "kota_eksportir": "KOTA ADM. JAKARTA PUSAT",
+      "nama_user": "eksportirdemo",
+      "no_aju": "II202507031664",
+      "tgl_daftar": "03 Juli 2025, 11:02:51",
+      "tgl_kirim": "2025-07-04 16:20:30",
+      "tgl_proses": "07 Juli 2025, 08:34:53",
+      "no_ska": "-",
+      "tgl_terbit": "-",
+      "cara_daftar": "WEBSITE"
+    },
+    "importir": {
+      "nama_importir": "Sultan Alexander Sarumpaet",
+      "negara_importir": "EGYPT",
+      "nama_sarana_pengangkut": "Sarumpaet",
+      "jenis_transportasi": "by AIR",
+      "plb_muat": "IDMES, Medan / Polonia (u)",
+      "plb_bongkar": "USSWI, Swissvale",
+      "tgl_rencana_ekspor": "17 Agustus 2025"
+    },
+    "form": {
+      "jenis_form": "Konvensional",
+      "tipe_form": "FORM B",
+      "kantor_ipska": "DITFAS",
+      "no_invoice": "INV/TEST/01",
+      "no_doc_pabean": "PEB/TEST/01",
+      "kppbc": "KANTOR PENGAWASAN DAN PELAYANAN BEA DAN CUKAI TIPE MADYA PABEAN B MEDAN"
+    },
+    "status": {
+      "status_pengajuan": "Diproses IPSKA",
+      "keterangan": "-",
+      "waktu_status": "07 Juli 2025, 08:34:53",
+      "jenis_pengajuan": "Baru",
+      "cetak_form": "-",
+      "pengiriman_sinsw": "N/A",
+      "waktu_kirim_sinsw": "N/A"
+    }
+  },
+  {
+    "no": 1,
+    "pengajuan": {
+      "nama_perusahaan": "DEMO EKSPORTIR",
+      "nib": "1234567891234",
+      "npwp": "123456789012098",
+      "kota_eksportir": "KOTA ADM. JAKARTA PUSAT",
+      "nama_user": "eksportirdemo",
+      "no_aju": "II202507031685",
+      "tgl_daftar": "03 Juli 2025, 11:04:35",
+      "tgl_kirim": "2025-07-07 08:35:04",
+      "tgl_proses": "07 Juli 2025, 08:39:35",
+      "no_ska": "-",
+      "tgl_terbit": "-",
+      "cara_daftar": "WEBSITE"
+    },
+    "importir": {
+      "nama_importir": "Vira Nurul",
+      "negara_importir": "THAILAND",
+      "nama_sarana_pengangkut": "Vessel",
+      "jenis_transportasi": "by SEA",
+      "plb_muat": "IDJKT, Tg. Priok Jakarta",
+      "plb_bongkar": "MYBCA, Batu Caves",
+      "tgl_rencana_ekspor": "29 Juli 2025"
+    },
+    "form": {
+      "jenis_form": "eForm",
+      "tipe_form": "FORM D",
+      "kantor_ipska": "DITFAS",
+      "no_invoice": "INV/2907/JUL",
+      "no_doc_pabean": "29072005",
+      "kppbc": "KANTOR PELAYANAN UTAMA BEA DAN CUKAI TIPE A TANJUNG PRIOK"
+    },
+    "status": {
+      "status_pengajuan": "Diproses IPSKA",
+      "keterangan": "-",
+      "waktu_status": "07 Juli 2025, 08:39:35",
+      "jenis_pengajuan": "Baru",
+      "cetak_form": "-",
+      "pengiriman_sinsw": "DONE",
+      "waktu_kirim_sinsw": "-"
+    }
+  },
+  {
+    "no": 3,
+    "pengajuan": {
+      "nama_perusahaan": "DEMO EKSPORTIR",
+      "nib": "1234567891234",
+      "npwp": "123456789012098",
+      "kota_eksportir": "KOTA ADM. JAKARTA PUSAT",
+      "nama_user": "eksportirdemo",
+      "no_aju": "II202507031661",
+      "tgl_daftar": "03 Juli 2025, 11:02:41",
+      "tgl_kirim": "2025-07-08 08:08:56",
+      "tgl_proses": "27 Juli 2025, 17:42:43",
+      "no_ska": "-",
+      "tgl_terbit": "-",
+      "cara_daftar": "WEBSITE"
+    },
+    "importir": {
+      "nama_importir": "Hanum Export",
+      "negara_importir": "INDIA",
+      "nama_sarana_pengangkut": "Vessell",
+      "jenis_transportasi": "by SEA",
+      "plb_muat": "IDRVK, Abu Road",
+      "plb_bongkar": "INBOM, Mumbai (Ex Bombay)",
+      "tgl_rencana_ekspor": "29 Juli 2025"
+    },
+    "form": {
+      "jenis_form": "Konvensional",
+      "tipe_form": "FORM AI",
+      "kantor_ipska": "DITFAS",
+      "no_invoice": "INV/123/25",
+      "no_doc_pabean": "DOC123",
+      "kppbc": "KANTOR PELAYANAN UTAMA BEA DAN CUKAI TIPE A TANJUNG PRIOK"
+    },
+    "status": {
+      "status_pengajuan": "Diproses IPSKA",
+      "keterangan": "-",
+      "waktu_status": "27 Juli 2025, 17:42:43",
+      "jenis_pengajuan": "Baru",
+      "cetak_form": "-",
+      "pengiriman_sinsw": "N/A",
+      "waktu_kirim_sinsw": "N/A"
+    }
+  }
+]
